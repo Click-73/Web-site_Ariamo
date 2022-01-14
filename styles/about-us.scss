@@ -1,0 +1,39 @@
+.about-us {
+  width: 100%;
+  height: 660px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  align-items: center;
+
+  &__text {
+    width: 152px;
+    height: 67px;
+    text-align: center;
+
+    &_title {
+      font-family: "Gilroy-light", sans-serif;
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: 300;
+      margin: 0;
+    }
+    &_description {
+      font-family: "Raleway", sans-serif;
+      font-size: 12px;
+      line-height: 19px;
+      color: $text-color-light-dark;
+      margin-top: 6px;
+    }
+  }
+
+  &__photo {
+    margin-top: 5px;
+    width: 100%;
+    height: 1000px;
+    background-image: url(images/about-us-photo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}

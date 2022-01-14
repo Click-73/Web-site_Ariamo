@@ -1,0 +1,46 @@
+.focus {
+  margin-top: 100px;
+  width: 100%;
+  height: 354px;
+  &__conteiner {
+    display: flex;
+    flex-direction: column;
+    min-width: 375px;
+    min-height: 354px;
+    background-image: url(images/focus-photo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: $text-color-grey-white;
+
+    & p:first-child {
+      margin: 84px 16px 74px 16px;
+      min-width: 343px;
+      max-height: 110px;
+      font-family: "Raleway", sans-serif;
+      font-size: 14px;
+      line-height: 22px;
+    }
+    & div {
+      //   margin-top: 74px;
+      width: 100%;
+      min-height: 10px;
+      display: flex;
+
+      & div {
+        margin: 0;
+        padding: 0;
+        min-width: 140px;
+        border-bottom: 0.4px solid $text-color-grey-white;
+      }
+
+      & p {
+        margin: 0 0 0 10px;
+        display: inline-block;
+        font-size: 17px;
+        line-height: 20px;
+        font-family: "Gilroy-light", sans-serif;
+        min-width: 400px;
+      }
+    }
+  }
+}
