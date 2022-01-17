@@ -4,7 +4,6 @@
   margin-top: 24px;
   display: flex;
   flex-direction: column;
-  //   justify-content: center;
   align-items: center;
 
   &__text {
@@ -35,5 +34,8 @@
     background-image: url(images/about-us-photo.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    @include for-large-up {
+      background-image: url(images/about-us-for-large.png);
+    }
   }
 }

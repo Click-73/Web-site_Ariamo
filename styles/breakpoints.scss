@@ -1,13 +1,13 @@
-$lg: 1200px;
+$sm: 375px;
 
-@mixin for-large-up {
-  @media screen and (min-width: $lg) {
+@mixin for-large-down {
+  @media screen and (max-width: $sm) {
     @content;
   }
 }
 
-@mixin for-large-down {
-  @media screen and (max-width: calc($lg - 1)) {
+@mixin for-large-up {
+  @media screen and (min-width: 376px) {
     @content;
   }
 }

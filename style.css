@@ -6,8 +6,23 @@
   align-items: center;
   color: #f9f5ec;
 }
+@media screen and (min-width: 376px) {
+  .common {
+    margin-top: 129px;
+    padding: 0 70px 0;
+    position: relative;
+  }
+}
 .common__text {
   background-color: #302c2c;
+}
+@media screen and (min-width: 376px) {
+  .common__text {
+    margin-left: auto;
+    width: 890px;
+    height: 470px;
+    padding: 0 94px 0;
+  }
 }
 .common__text h2 {
   padding-top: 30px;
@@ -17,6 +32,17 @@
   font-size: 24px;
   line-height: 28px;
 }
+@media screen and (min-width: 376px) {
+  .common__text h2 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+@media screen and (min-width: 376px) {
+  .common__text h2 br {
+    display: none;
+  }
+}
 .common__text p {
   margin: 18px 47px 20px;
   font-family: "Raleway", sans-serif;
@@ -25,6 +51,21 @@
   color: #f0ece3;
   font-weight: 200;
 }
+@media screen and (min-width: 376px) {
+  .common__text p {
+    margin: 0;
+    font-weight: normal;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 29px;
+    color: #f9f5ec;
+  }
+}
+@media screen and (min-width: 376px) and (min-width: 376px) {
+  .common__text p br {
+    display: none;
+  }
+}
 .common__text hr {
   display: inline-block;
   width: 60%;
@@ -32,9 +73,24 @@
   margin: 0 20% 26px 20%;
   margin-bottom: 26px;
 }
+@media screen and (min-width: 376px) {
+  .common__text hr {
+    width: 110%;
+    margin: 0;
+    margin-top: 143px;
+    margin-left: -13.5%;
+  }
+}
 .common__button {
   width: 161px;
   margin-top: 20px;
+}
+@media screen and (min-width: 376px) {
+  .common__button {
+    position: absolute;
+    right: 420px;
+    top: 294px;
+  }
 }
 .common__button_item {
   font-family: "Raleway", sans-serif;
@@ -45,6 +101,17 @@
   border-bottom: 1px solid #635859;
   color: #635859;
   padding-bottom: 10px;
+}
+@media screen and (min-width: 376px) {
+  .common__button_item {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    width: 180px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #f0ece3;
+    border-bottom: 1px solid #f0ece3;
+  }
 }
 
 .about-us {
@@ -81,6 +148,11 @@
   background-image: url(images/about-us-photo.png);
   background-size: 100%;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 376px) {
+  .about-us__photo {
+    background-image: url(images/about-us-for-large.png);
+  }
 }
 
 .product {
@@ -252,12 +324,9 @@
 .footer__support {
   display: flex;
   flex-direction: column;
-  margin-left: 16px;
-  margin-right: 55px;
 }
 .footer__support p {
-  margin: 0;
-  text-align: center;
+  margin: 0 auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
@@ -265,6 +334,8 @@
   padding-bottom: 12px;
 }
 .footer__support_list {
+  margin-left: 16px;
+  margin-right: 55px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -333,7 +404,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin: 50px 62px 0;
 }
 .footer__icons i {
   background-size: 100%;
@@ -359,6 +430,32 @@
   width: 14px;
   height: 14px;
   background-image: url(icons/footer-pinterest.png);
+}
+.footer__developed {
+  background-color: #635859;
+  padding: 23px 16px 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Raleway", sans-serif;
+  color: #d9dbe1;
+  line-height: 24px;
+}
+.footer__developed p:first-child {
+  font-size: 8px;
+}
+.footer__developed div {
+  display: flex;
+  align-items: center;
+}
+.footer__developed div p {
+  font-size: 9px;
+}
+.footer__developed div i {
+  display: inline-block;
+  width: 50px;
+  height: 12px;
+  background-image: url(icons/footer-logo\ brill_1\ 4.png);
+  margin-left: 4px;
 }
 
 .header {
@@ -474,6 +571,36 @@
   width: 18px;
   height: 14px;
   margin-right: 10px;
+}
+
+.our-collections {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 38px;
+}
+.our-collections h2 {
+  font-size: 28px;
+  line-height: 32px;
+  font-family: "Gilroy-light", sans-serif;
+  color: #635859;
+  text-align: center;
+}
+.our-collections__card {
+  padding: 0;
+  width: 300px;
+  height: 500px;
+  text-align: -webkit-center;
+  display: flex;
+  flex-direction: column;
+}
+.our-collections__card p {
+  padding: 0;
+  margin: 8px 0 0;
+}
+.our-collections__card:not(:nth-of-type(1)) {
+  margin-top: 60px;
 }
 
 * {

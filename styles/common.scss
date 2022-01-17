@@ -4,11 +4,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   color: $text-color-light-white;
+
+  @include for-large-up {
+    margin-top: 129px;
+    padding: 0 70px 0;
+    position: relative;
+  }
 
   &__text {
     background-color: $background-color-dark-grey;
+
+    @include for-large-up {
+      margin-left: auto;
+      width: 890px;
+      height: 470px;
+      padding: 0 94px 0;
+    }
 
     & h2 {
       padding-top: 30px;
@@ -17,6 +29,16 @@
       font-weight: 500;
       font-size: 24px;
       line-height: 28px;
+
+      @include for-large-up {
+        font-size: 36px;
+        line-height: 42px;
+      }
+      & br {
+        @include for-large-up {
+          display: none;
+        }
+      }
     }
 
     & p {
@@ -26,6 +48,20 @@
       line-height: 20px;
       color: $text-color-grey-white;
       font-weight: 200;
+
+      @include for-large-up {
+        margin: 0;
+        font-weight: normal;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        line-height: 29px;
+        color: $text-color-light-white;
+        & br {
+          @include for-large-up {
+            display: none;
+          }
+        }
+      }
     }
 
     & hr {
@@ -34,11 +70,24 @@
       color: $text-color-grey-white;
       margin: 0 20% 26px 20%;
       margin-bottom: 26px;
+
+      @include for-large-up {
+        width: 110%;
+        margin: 0;
+        margin-top: 143px;
+        margin-left: -13.5%;
+      }
     }
   }
   &__button {
     width: 161px;
     margin-top: 20px;
+
+    @include for-large-up {
+      position: absolute;
+      right: 420px;
+      top: 294px;
+    }
     &_item {
       font-family: "Raleway", sans-serif;
       font-size: 18px;
@@ -48,6 +97,16 @@
       border-bottom: 1px solid $text-color-light-dark;
       color: $text-color-light-dark;
       padding-bottom: 10px;
+
+      @include for-large-up {
+        font-family: "Raleway", sans-serif;
+        font-weight: 300;
+        width: 180px;
+        font-size: 20px;
+        line-height: 23px;
+        color: $text-color-grey-white;
+        border-bottom: 1px solid $text-color-grey-white;
+      }
     }
   }
 }

@@ -1,0 +1,32 @@
+.our-collections {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 38px;
+
+  & h2 {
+    font-size: 28px;
+    line-height: 32px;
+    font-family: "Gilroy-light", sans-serif;
+    color: $background-color-ligth-grey;
+    text-align: center;
+  }
+
+  &__card {
+    padding: 0;
+    width: 300px;
+    height: 500px;
+    text-align: -webkit-center;
+    display: flex;
+    flex-direction: column;
+
+    & p {
+      padding: 0;
+      margin: 8px 0 0;
+    }
+  }
+  &__card:not(:nth-of-type(1)) {
+    margin-top: 60px;
+  }
+}
