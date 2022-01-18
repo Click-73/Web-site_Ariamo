@@ -2,6 +2,11 @@
   margin-top: 100px;
   width: 100%;
   height: 354px;
+
+  @include for-large-up {
+    height: 400px;
+  }
+
   &__conteiner {
     display: flex;
     flex-direction: column;
@@ -12,6 +17,12 @@
     background-repeat: no-repeat;
     color: $text-color-grey-white;
 
+    @include for-large-up {
+      background-color: $background-color-ligth-grey;
+      background-image: url(images/focus-photo-desktop.png);
+      background-size: 100%;
+    }
+
     & p:first-child {
       margin: 84px 16px 74px 16px;
       min-width: 343px;
@@ -19,12 +30,25 @@
       font-family: "Raleway", sans-serif;
       font-size: 14px;
       line-height: 22px;
+
+      @include for-large-up {
+        max-width: 1300px;
+        height: 58px;
+        font-size: 16px;
+        line-height: 29px;
+        margin: 109px 57px 89px 83px;
+        text-align: center;
+      }
     }
     & div {
       //   margin-top: 74px;
       width: 100%;
       min-height: 10px;
       display: flex;
+
+      @include for-large-up {
+        margin: 0 57px 116px 109px;
+      }
 
       & div {
         margin: 0;

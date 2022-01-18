@@ -6,10 +6,21 @@
   flex-direction: column;
   align-items: center;
 
+  @include for-large-up {
+    margin-top: 65px;
+    height: 850px;
+  }
+
   &__text {
     width: 152px;
     height: 67px;
     text-align: center;
+
+    @include for-large-up {
+      width: 260px;
+      height: 96px;
+      margin-bottom: 20px;
+    }
 
     &_title {
       font-family: "Gilroy-light", sans-serif;
@@ -17,6 +28,11 @@
       line-height: 42px;
       font-weight: 300;
       margin: 0;
+
+      @include for-large-up {
+        font-size: 60px;
+        line-height: 69px;
+      }
     }
     &_description {
       font-family: "Raleway", sans-serif;
@@ -35,6 +51,8 @@
     background-size: 100%;
     background-repeat: no-repeat;
     @include for-large-up {
+      height: 700px;
+      background-size: cover;
       background-image: url(images/about-us-for-large.png);
     }
   }

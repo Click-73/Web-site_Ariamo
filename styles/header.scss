@@ -3,9 +3,12 @@
   height: 85px;
   display: flex;
   flex-direction: column;
+
+  @include for-large-up {
+    height: 92px;
+  }
   &__upper-section {
     height: 31px;
-
     display: flex;
     flex-direction: row;
     // margin-left: 12px;
@@ -13,6 +16,10 @@
     justify-content: space-between;
     background-color: $background-color-dark-grey;
     color: $text-color-grey-white;
+
+    @include for-large-up {
+      height: 44px;
+    }
 
     &_navigation {
       margin: 0;
@@ -28,21 +35,36 @@
         text-transform: uppercase;
         padding: 8px;
         font-weight: 500;
+
+        @include for-large-up {
+          padding: 14px 42px;
+        }
       }
       & li:first-child {
         padding-left: 12px;
         background-color: $background-color-grey;
         color: $text-color-dark-grey;
         font-weight: 300;
+        @include for-large-up {
+          padding-left: 50px;
+        }
       }
       & li:nth-child(3) {
         padding-left: 16px;
+
+        @include for-large-up {
+          padding-left: 42px;
+        }
       }
     }
     &_languages {
       display: flex;
       flex-direction: row;
       align-items: center;
+
+      @include for-large-up {
+        margin-right: 30px;
+      }
       & p {
         color: $text-color-grey-white;
         font-weight: 300;
@@ -67,14 +89,50 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @include for-large-up {
+      margin: 20px 0 0 50px;
+      justify-content: space-between;
+    }
     &_logo {
       width: 100%;
       margin-top: 16px;
       &-item {
         background-image: url(icons/logo-header.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
         display: inline-block;
         width: 100px;
         height: 33px;
+
+        @include for-large-up {
+          width: 154px;
+          height: 51px;
+        }
+      }
+    }
+
+    &_navigation {
+      display: none;
+
+      @include for-large-up {
+        display: flex;
+        width: 465px;
+        margin-left: -15%;
+      }
+      & ul {
+        display: flex;
+        flex-direction: row;
+        & li {
+          font-size: 16px;
+          display: inline-block;
+          line-height: 20px;
+          text-transform: uppercase;
+          padding: 8px;
+          font-weight: 500;
+          margin-right: 30px;
+          white-space: nowrap;
+        }
       }
     }
     &_context-menu {
@@ -83,6 +141,10 @@
       align-items: center;
       justify-content: flex-end;
       margin-right: 20px;
+
+      @include for-large-up {
+        margin-right: 80px;
+      }
 
       & i {
         display: inline-block;
@@ -97,22 +159,30 @@
         width: 18px;
         height: 18px;
         background-image: url(icons/search-header.png);
+
+
       }
       & i:nth-child(2) {
         background-image: url(icons/heart-header.png);
         width: 20px;
         height: 17px;
+
+
       }
       & i:nth-child(3) {
         background-image: url(icons/basket-header.png);
         width: 14px;
         height: 20px;
+
+
       }
       & i:nth-child(4) {
         background-image: url(icons/menu-header.png);
         width: 18px;
         height: 14px;
         margin-right: 10px;
+
+
       }
     }
   }

@@ -1,0 +1,27 @@
+.collage {
+  @include for-large-down {
+    display: none;
+  }
+  width: 1300px;
+  height: 1200px;
+  //   display: flex;
+  margin: 0 70px;
+
+  & img {
+    margin: 25px;
+  }
+
+  & img:nth-of-type(1) {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  & img:nth-of-type(4) {
+    vertical-align: top;
+    margin: 0;
+    margin-top: 25px;
+  }
+  & img:nth-of-type(5) {
+    margin: 25px 20px 0 50px;
+  }
+}

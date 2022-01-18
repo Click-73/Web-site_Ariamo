@@ -5,6 +5,10 @@
   flex-direction: column;
   padding: 0 38px;
 
+  @include for-large-up {
+    display: none;
+  }
+
   & h2 {
     font-size: 28px;
     line-height: 32px;
@@ -15,18 +19,32 @@
 
   &__card {
     padding: 0;
-    width: 300px;
-    height: 500px;
+
     text-align: -webkit-center;
     display: flex;
     flex-direction: column;
+
+    &_item {
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 300px;
+      height: 500px;
+    }
+    &_item:nth-of-type(1) {
+      background-image: url(images/our-collections-1.png);
+    }
+
+    &_item:nth-of-type(2) {
+      background-image: url(images/our-collections-2.png);
+    }
+
+    &_item:nth-of-type(3) {
+      background-image: url(images/our-collection-3.png);
+    }
 
     & p {
       padding: 0;
       margin: 8px 0 0;
     }
-  }
-  &__card:not(:nth-of-type(1)) {
-    margin-top: 60px;
   }
 }

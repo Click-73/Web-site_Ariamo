@@ -1,0 +1,40 @@
+.our-collection-desktop {
+  width: 100%;
+  height: 1380px;
+  position: relative;
+  margin-top: 150px;
+  //   padding-right: 50px;
+
+  @include for-large-down {
+    display: none;
+  }
+
+  &__dark-block {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    bottom: 475px;
+    background-color: $background-color-dark-grey;
+  }
+
+  &__photo {
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    font-weight: normal;
+    padding: 0;
+    margin: 0 70px 0 0;
+    width: 410px;
+    height: 70px;
+    font-size: 60px;
+    line-height: 70px;
+    position: absolute;
+    top: 0;
+    right: 138px;
+    color: $background-color-ligth-grey;
+    white-space: nowrap;
+  }
+}
