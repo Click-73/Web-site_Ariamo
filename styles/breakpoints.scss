@@ -1,7 +1,5 @@
-$sm: 375px;
-
 @mixin for-large-down {
-  @media screen and (max-width: $sm) {
+  @media screen and (max-width: 375px) {
     @content;
   }
 }

@@ -1,12 +1,10 @@
 .product {
   background-color: $background-color-grey;
   margin-top: 60px;
-  //   padding-top: 327px;
   width: 100%;
   height: 1064px;
   display: flex;
   flex-direction: column;
-  //   justify-content: center;
   align-items: center;
   position: relative;
 
@@ -22,7 +20,6 @@
     height: 435px;
     background-repeat: no-repeat;
     background-size: 100%;
-    // padding-bottom: -100px;
   }
 
   &__text {

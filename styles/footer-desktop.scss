@@ -1,0 +1,110 @@
+.footer-desktop {
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color-ligth-grey;
+
+  height: 404px;
+  margin-top: 146px;
+  position: relative;
+
+  @include for-large-down {
+    display: none;
+  }
+
+  &__upper {
+    display: flex;
+    flex-direction: row;
+    padding: 96px 0 96px 150px;
+
+    & div:not(:first-child) {
+      margin-left: 90px;
+    }
+
+    &_logo {
+      background-image: url(icons/logo-footer.png);
+      display: inline-block;
+      width: 150px;
+      height: 50px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      margin-top: 20px;
+    }
+
+    & ul {
+      list-style-type: none;
+      padding: 0;
+      font-family: "Raleway", sans-serif;
+      color: $text-color-grey;
+
+      & li {
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 24px;
+        padding-bottom: 8px;
+      }
+
+      & li:first-child {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        color: $text-color-white;
+        padding-bottom: 12px;
+      }
+    }
+
+    &_subscribe {
+      margin-left: 150px !important;
+      &-text {
+        text-align: start;
+        width: 370px;
+      }
+      &-button {
+        width: 395px;
+        & input:first-of-type {
+          min-width: 290px;
+        }
+      }
+      &-icons {
+        margin: 32px 0 32px 0 !important;
+      }
+    }
+  }
+  &__lower {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 20px;
+    // justify-content: center;
+    align-items: center;
+
+    & p {
+      margin: 0 30px;
+      font-size: 12px;
+      color: $text-color-grey;
+    }
+
+    & hr {
+      color: $text-color-grey-white;
+      width: 42%;
+      height: 0.3px;
+    }
+
+    & div {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      bottom: 12px;
+      right: 40px;
+      & p {
+        font-size: 9px;
+      }
+      & i {
+        display: inline-block;
+        width: 50px;
+        height: 12px;
+        background-image: url(icons/footer-logo\ brill_1\ 4.png);
+      }
+    }
+  }
+}

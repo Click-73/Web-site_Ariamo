@@ -10,6 +10,7 @@
 @import "collage.scss";
 @import "product-desktop.scss";
 @import "our-collections-desktop.scss";
+@import "footer-desktop.scss";
 * {
   box-sizing: border-box;
 }
@@ -24,12 +25,4 @@ html {
 .page {
   width: 100%;
   overflow: hidden;
-
-  //   @include for-large-up {
-  //     max-width: 1200px;
-  //     margin: auto;
-  //     min-height: 100vh;
-  //   display: flex;
-  //   flex-direction: column;
-  //   }
 }
